@@ -2062,8 +2062,9 @@
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_detonator/c_detonator"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/workshop/weapons/c_models/c_detonator/c_detonator.mdl"
-			"attach_to_hands"	"1"
+			"model_player"	"models/weapons/v_models/v_flaregun_pyro.mdl"
+			"model_world"	"models/weapons/w_models/w_flaregun.mdl"
+			"attach_to_hands"	"2"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
 			"propername"	"0"
@@ -2071,7 +2072,7 @@
 			"max_ilevel"	"10"
 			"used_by_classes"
 			{
-				"pyro"	"1"
+				"sniper"
 			}
 			"static_attrs"
 			{
@@ -2080,25 +2081,10 @@
 			}
 			"attributes"
 			{
-				"blast dmg to self increased"
-				{
-					"attribute_class"	"blast_dmg_to_self"
-					"value"	"1.50"
-				}
-				"damage penalty"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"0.75"
-				}
 				"lunchbox adds minicrits"
 				{
 					"attribute_class"	"set_weapon_mode"
 					"value"	"1"
-				}
-				"special taunt"
-				{
-					"attribute_class"	"special_taunt"
-					"value" "1"
 				}
 			}
 			"visuals"
@@ -7141,102 +7127,13 @@
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
-
-		"1132"
-		{
-			"name"	"TF_WEAPON_SPELLBOOK"
-			"prefab"	"halloween2013_spellbook"
-			"item_type_name"	"#TF_Spellbook_Type"
-			"item_name"			"#TF_Spellbook_Basic"
-			"item_description"	"#TF_SpellBook_Basic_Desc"
-			"item_quality"		"normal"
-			"baseitem"			"0"
-			"show_in_armory"	"1"
-			"min_ilevel"		"1"
-			"max_ilevel"		"1"
-			"image_inventory"	"backpack/props_halloween/hwn_spellbook_magazine"
-		}
-		"1152"
-		{
-			"name"		"TF_WEAPON_GRAPPLINGHOOK"
-			"item_class"	"tf_weapon_grapplinghook"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"show_in_armory" "1"
-			"item_type_name"	"#TF_Weapon_GrapplingHook"
-			"item_name"	"#TF_Weapon_GrapplingHook"
-			"item_description"	"#TF_Weapon_GrapplingHook_desc"
-			"item_logname"	"grappling_hook"
-			"item_iconname"	"grappling_hook"
-			"item_slot"	"action"
-			"item_quality"	"normal"
-			"min_ilevel"	"1"
-			"max_ilevel"	"1"
-			"image_inventory"	"backpack/weapons/c_models/c_grappling_hook/c_grappling_hook"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_grappling_hook/c_grappling_hook.mdl"
-			"attach_to_hands"	"1"
-			"act_as_weapon"		"1"
-			"anim_slot" "MELEE_ALLCLASS"
-			"used_by_classes"
-			{
-				"scout"		"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"		"1"
-				"heavy"		"1"
-				"spy" 		"1"
-				"engineer" 	"1"
-				"pyro" 		"1"
-				"mercenary" "1"
-				"civilian" "1"
-				"zombiefast" "1"
-			}
-			"attributes"
-			{
-				"reload time increased hidden"
-				{
-					"attribute_class"	"mult_reload_time_hidden"
-					"value"	"0"
-				}
-				"override projectile type"
-				{
-					"attribute_class"	"override_projectile_type"
-					"value"				"26" 
-				}
-				"single wep deploy time decreased"
-				{
-					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"	"0"
-				}
-				"switch from wep deploy time decreased"
-				{
-					"attribute_class"	"mult_switch_from_wep_deploy_time"
-					"value"	"0.2"
-				}
-				"force weapon switch"
-				{
-					"attribute_class"	"force_weapon_switch"
-					"value"	"1"
-				}
-			}
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"		"ui/item_light_gun_drop.wav"
-			"xifier_class_remap"	"grappling_hook"
-		}
-		"39"
+		"25"
 		{
 			"name"	"The Flare Gun"
 			"prefab"	"valve weapon_flaregun"
 			"first_sale_date"	"2011/04/14"
 		}
-		"43"
+		"26"
 		{
 			"name"	"The Killing Gloves of Boxing"
 			"prefab"	"valve"
@@ -7312,7 +7209,7 @@
 			"mouse_pressed_sound" 	"ui/item_boxing_gloves_pickup.wav"
 			"drop_sound" 		"ui/item_boxing_gloves_drop.wav"
 		}
-		"44"
+		"27"
 		{
 			"name"	"The Sandman"
 			"prefab"	"valve"
@@ -7390,7 +7287,7 @@
 			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
 			"drop_sound"		"ui/item_wood_pole_drop.wav"
 		}
-		"56"
+		"28"
 		{
 			"name"	"The Huntsman"
 			"first_sale_date"	"2010/09/29"
@@ -7399,14 +7296,14 @@
 			"baseitem"	"0"
 			"show_in_armory"	"1"
 		}
-		"58"
+		"29"
 		{
 			"name"	"Jarate"
 			"prefab"	"valve weapon_jarate"
 			"first_sale_date"	"2010/09/29"
 			"show_in_armory"	"1"
 		}
-		"128"
+		"30"
 		{
 			"name"	"The Equalizer"
 			"prefab"	"valve"
@@ -7481,7 +7378,7 @@
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
-		"167"
+		"31"
 		{
 			"name"	"High Five Taunt"
 			"prefab"	"valve taunt"
@@ -7595,7 +7492,7 @@
 				"custom_sound0"		"TFPlayer.HighFive"
 			}
 		}
-		"239"
+		"32"
 		{
 			"name"	"Gloves of Running Urgently"
 			"prefab"	"valve weapon_gru"
@@ -7620,7 +7517,7 @@
 				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
 			}
 		}
-		"264"
+		"33"
 		{
 			"name"	"Frying Pan"
 			"item_class"	"saxxy"
@@ -7688,7 +7585,7 @@
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
-		"278"
+		"34"
 		{
 			"name"	"Horseless Headless Horseman's Head"
 			"prefab"		"base_hat"
@@ -7752,7 +7649,7 @@
 			"drop_sound" 		"ui/item_default_drop.wav"
 		}
 
-		"6940"
+		"35"
 		{
 			"name"	"Ghostly Gibus"
 			"prefab"		"base_hat"
@@ -7838,7 +7735,7 @@
 			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
 			"drop_sound" 			"ui/item_hat_drop.wav"
 		}
-		"305"
+		"36"
 		{
 			"name"	"The Crusader's Crossbow"
 			"first_sale_date"	"2010/12/08"
@@ -7860,7 +7757,7 @@
 				}
 			}
 		}
-		"307"
+		"37"
 		{
 			"name"	"The Ullapool Caber"
 			"first_sale_date"	"2010/12/08"
@@ -7926,71 +7823,7 @@
 				}
 			}
 		}
-		"317"
-		{
-			"name"	"The Candy Cane"
-			"first_sale_date"	"2010/12/20"
-			"item_class"	"tf_weapon_bat"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_Bat"
-			"item_name"	"#TF_CandyCane"
-			"item_logname"	"candy_cane"
-			"item_iconname"	"candy_cane"
-			"item_slot"	"melee"
-			"item_quality"	"unique"
-			"propername"	"1"
-			"min_ilevel"	"25"
-			"max_ilevel"	"25"
-			"attach_to_hands"	"1"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_candy_cane/c_candy_cane"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"inspect_panel_dist"        "45"					
-			"model_player"	"models/workshop/weapons/c_models/c_candy_cane/c_candy_cane.mdl"
-			"used_by_classes"
-			{
-				"scout"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 0 -6"
-			}
-			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
-			"drop_sound"		"ui/item_wood_pole_drop.wav"
-			"visuals_red"
-			{
-				"skin"	"0"
-			}
-			"visuals_blu"
-			{
-				"skin"	"1"
-			}
-			"attributes"
-			{
-				"drop health pack on kill"
-				{
-					"attribute_class"	"drop_health_pack_on_kill"
-					"value"			"1"
-				}
-				"dmg taken from blast increased"
-				{
-					"attribute_class"	"mult_dmgtaken_from_explosions"
-					"value"			"1.25"
-				}
-			}
-		}
-		"331"
+		"39"
 		{
 			"name"	"Fists of Steel"
 			"first_sale_date"	"2010/12/20"
@@ -8024,7 +7857,7 @@
 			"propername"	"1"
 			"used_by_classes"
 			{
-				"heavy"	"1"
+				"soldier"	"1"
 			}
 			"static_attrs"
 			{
@@ -8072,7 +7905,7 @@
 				}
 			}
 		}
-		"351"
+		"40"
 		{
 			"name"	"The Detonator"
 			"prefab"	"weapon_detonator"
@@ -8095,7 +7928,7 @@
 			}
 		}
 
-		"357"
+		"41"
 		{
 			"name"	"The Half-Zatoichi"
 			"first_sale_date"	"2011/03/08"
@@ -8123,9 +7956,7 @@
 			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_shogun_katana/c_shogun_katana"
 			"used_by_classes"
 			{
-				"soldier"	"1"
-				"demoman"	"1"
-				"civilian"  "1"
+				"sniper"	"1"
 			}
 			"static_attrs"
 			{
@@ -8168,7 +7999,7 @@
 			"mouse_pressed_sound"	"ui/item_knife_large_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
-		"416"
+		"42"
 		{
 			"name"	"The Market Gardener"
 			"first_sale_date"	"2011/03/23"
@@ -8231,7 +8062,7 @@
 			"mouse_pressed_sound"	"ui/item_shovel_pickup.wav"
 			"drop_sound"		"ui/item_shovel_drop.wav"
 		}
-		"438"
+		"43"
 		{
 			"name"	"Replay Taunt"
 			"prefab"	"taunt"
@@ -8260,8 +8091,8 @@
 				"custom_taunt_scene_per_class"
 				{
 					"scout"		"scenes\player\scout\low\taunt_replay.vcd"
-					"sniper"	"scenes\player\sniper\low\taunt_replay.vcd"
-					"soldier"	"scenes\player\soldier\low\taunt_replay.vcd"
+					"sniper"	"scenes\player\soldier\low\taunt_replay.vcd"
+					"soldier"	"scenes\player\heavy\low\taunt_replay.vcd"
 					"demoman"	"scenes\player\demoman\low\taunt_replay.vcd"
 					"medic"		"scenes\player\medic\low\taunt_replay.vcd"
 					"heavy"		"scenes\player\heavy\low\taunt_replay.vcd"
@@ -8278,7 +8109,7 @@
 				}
 			}
 		}
-		"447"
+		"44"
 		{
 			"name"	"The Disciplinary Action"
 			"prefab" "weapon_disciplinary_action"
@@ -8292,7 +8123,7 @@
 			{
 			}
 		}
-		"449"
+		"45"
 		{
 			"name"	"The Winger"
 			"prefab"	"weapon_winger_pistol"
@@ -8323,7 +8154,7 @@
 				}
 			}
 		}
-		"463"
+		"46"
 		{
 			"name"	"Laugh Taunt"
 			"prefab"	"valve taunt"
@@ -8380,7 +8211,7 @@
 			}
 		}
 
-		"474"
+		"47"
 		{
 			"name"	"The Conscientious Objector"
 			"first_sale_date"	"2011/09/07"
@@ -8454,7 +8285,7 @@
 				}
 			}
 		}
-		"489"
+		"48"
 		{
 			"name"	"Power Up Canteen (MvM)"
 			"first_sale_date"	"2012/12/25"
@@ -8469,7 +8300,7 @@
 				}
 			}
 		}
-		"513"
+		"49"
 		{
 			"name"	"The Original"
 			"first_sale_date"	"2011/08/09"
@@ -8564,7 +8395,7 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
-		"536"
+		"50"
 		{
 			"name"	"Noise Maker - TF Birthday"
 			"loadondemand"	"1"
@@ -8633,7 +8464,7 @@
 			"mouse_pressed_sound" 	"Game.HappyBirthdayNoiseMaker"
 			"drop_sound"		"ui/item_metal_scrap_drop.wav"
 		}
-		"656"
+		"51"
 		{
 			"name"	"The Holiday Punch"
 			"first_sale_date"	"2011/12/19"
@@ -8739,7 +8570,7 @@
 			"mouse_pressed_sound" "ui/item_hat_pickup.wav"
 			"drop_sound"          "ui/item_boxing_gloves_drop.wav"
 		}
-		"673"
+		"52"
 		{
 			"name"	"Noise Maker - Winter 2011"
 			"first_sale_date"	"2011/12/15"
@@ -8804,7 +8635,7 @@
 			"mouse_pressed_sound" 	"xmas.jingle_noisemaker"
 			"drop_sound"		"ui/item_metal_scrap_drop.wav"
 		}
-		"740"
+		"53"
 		{
 			"name"	"The Scorch Shot"
 			"prefab" "weapon_scorch_shot"
@@ -8826,7 +8657,7 @@
 				}
 			}
 		}
-		"773"
+		"54"
 		{
 			"name" "Pretty Boy's Pocket Pistol"
 			"capabilities"
@@ -8869,7 +8700,6 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
-				"engineer"	"1"
 			}
 			"static_attrs"
 			{
@@ -8906,7 +8736,7 @@
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
-		"775"
+		"55"
 		{
 			"name"	"The Escape Plan"
 			"prefab"	"valve"
@@ -8942,8 +8772,7 @@
 			"attach_to_hands" "1"
 			"used_by_classes"
 			{
-				"soldier"	"1"
-                                "demoman"       "1"
+				"sniper"	"1"
 			}
 			"static_attrs"
 			{
@@ -9322,7 +9151,7 @@
 				}
 			}
 		}
-		"1098"
+		"56"
 		{
 			"name"	"The Classic"
 			"prefab"	"valve weapon_sniperrifle_alt1"
@@ -9408,96 +9237,196 @@
 				"max ammo override"
 				{
 					"attribute_class"	"max_ammo"
-					"value" "15"
+					"value" "16"
 				}
 				"spawn ammo override"
 				{
 					"attribute_class"	"mod_spawn_ammo_override"
-					"value" "15"
+					"value" "16"
 				}
 
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
-		"1099"
+		"9960"
 		{
-			"name"			"The Tide Turner"
-			"first_sale_date"		"2014/06/18"
-			"item_class"		"tf_wearable_demoshield"
+			"name"	"Displacer Cannon"
+			"item_class"	"tf_weapon_displacer"
+			"baseitem" "0"
+			"enabled" "1"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"#TF_Weapon_Displacer"
+			"item_slot"	"primary"
+			"item_description"	"poop"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"image_inventory"			"backpack/weapons/w_models/w_rocketlauncher"
+			"model_player"	"models/weapons/v_models/v_displacer_merc.mdl"
+			"model_world"	"models/weapons/w_models/w_displacer.mdl"
+			"attach_to_hands" "2"
+			"inspect_panel_dist" "40"
+			"attach_to_hands" "2"
+			"show_in_armory"	"1"
+			"inspect_panel_dist" "40"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"mercenary"  "1"
+				"robo" "1"
+			}
+			"attributes"
+			{
+				"blast dmg to self reduced"
+				{
+					"attribute_class"	"blast_dmg_to_self"
+					"value"	"0.5"
+				}
+				"max ammo override"
+				{
+					"attribute_class"	"max_ammo"
+					"value" "10"
+				}
+				"spawn ammo override"
+				{
+					"attribute_class"	"mod_spawn_ammo_override"
+					"value" "10"
+				}
+				"spawn ammo override"
+				{
+					"attribute_class"	"mod_spawn_ammo_override"
+					"value" "10"
+				}
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -7"
+			}
+			"mouse_pressed_sound"    "ui/item_metal_weapon_pickup.wav"
+            "drop_sound"        "ui/item_metal_weapon_drop.wav"
+		}
+		"9718"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun_primary"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"capabilities"
 			{
 				"nameable"		"1"
+				"can_collect" "1"
 			}
 			"tags"
 			{
 				"can_deal_damage"			"1"
-				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
 			}
+			"base_item_name"	"The Super Shotgun"
+			"item_type_name"	"Double Barreled Shotgun"
+			"item_name"	"The Super Shotgun"
+			"item_description"	"Model from Open Fortress"
+			"item_logname"	"supershot"
+			"item_iconname"	"supershot"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
 			"show_in_armory"	"1"
-			"item_type_name" 	"#TF_Wearable_Shield"
-			"item_name"		"#TF_TideTurner"
-			"item_description"	"#TF_TideTurner_Desc"
-			"item_slot"		"secondary"
-			"equip_region"	"arms"
-			"anim_slot"		"FORCE_NOT_USED"
-			"item_quality"		"unique"
 			"propername"	"1"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"item_logname"	"tide_turner"
-			"item_iconname"	"tide_turner"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_wheel_shield/c_wheel_shield"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"anim_slot"		"primary"
+			"image_inventory"	"backpack/weapons/w_models/supershotgun"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"inspect_panel_dist" 			"45"
-			"model_player"	"models/workshop/weapons/c_models/c_wheel_shield/c_wheel_shield.mdl"
-			"act_as_wearable" "1"
-			"attach_to_hands"	"0"
-			"attach_to_hands_vm_only"	"1"
-			"drop_type"	"drop"
+			"model_player"	"models/weapons/v_models/v_supershotgun_mercenary.mdl"
+			"model_world"	"models/weapons/w_models/w_supershotgun.mdl"
+			"attach_to_hands" "2"
+			"inspect_panel_dist" "38"
 			"used_by_classes"
 			{
-				"demoman"	"1"
+				"mercenary"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
 			}
 			"attributes"
 			{
-				"dmg taken from fire reduced"
+				"bullets per shot bonus"
 				{
-					"attribute_class"	"mult_dmgtaken_from_fire"
-					"value"			"0.85"
+					"attribute_class"	"mult_bullets_per_shot"
+					"value" "2.00"
 				}
-				"dmg taken from blast reduced"
+				"damage causes airblast"
 				{
-					"attribute_class"	"mult_dmgtaken_from_explosions"
-					"value"			"0.85"
+					"attribute_class"	"damage_causes_airblast"
+					"value" "10.0"
 				}
-				"lose demo charge on damage when charging"
+				"damage penalty"
 				{
-					"attribute_class"	"lose_demo_charge_on_damage_when_charging"
-					"value"				"1"
+					"attribute_class"	"mult_dmg"
+					"value" "1.2"
 				}
-				"allowed in medieval mode"
+				"clip size penalty"
 				{
-					"attribute_class"	"allowed_in_medieval_mode"
+					"attribute_class"	"mult_clipsize"
+					"value" "0.10"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value" "3.00"
+				}
+				"dmg falloff increased"
+				{
+					"attribute_class"	"mult_dmg_falloff"
+					"value"	"4.00"
+				}
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
 					"value"	"1"
 				}
-				"full charge turn control"
+				"scattergun knockback mult"
 				{
-					"attribute_class"	"charge_turn_control"
-					"value"			"50"
+					"attribute_class"	"scattergun_knockback_mult"
+					"value"	"1.50"
 				}
-				"kill refills meter"
+				"crit mod disabled"
 				{
-					"attribute_class"	"kill_refills_meter"
-					"value"			"0.75"
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"max ammo override"
+				{
+					"attribute_class"	"max_ammo"
+					"value" "16"
+				}
+				"spawn ammo override"
+				{
+					"attribute_class"	"mod_spawn_ammo_override"
+					"value" "16"
 				}
 			}
-			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
-			"drop_sound"		"ui/item_wood_pole_drop.wav"
-		}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_SuperShotgun.Single"
+				"sound_burst"			"Weapon_SuperShotgun.SingleCrit"
+				"muzzle_flash"	"muzzle_bignasty"
+				"tracer_effect"	"bullet_bignasty_tracer01"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+        }
 		"1106"
 		{
 			"name"	"Square Dance Taunt"
@@ -9778,297 +9707,6 @@
 				"is_partner_taunt" "1"
 			}
 		}
-		"1108"
-		{
-			"name"	"Buy A Life Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"		"#TF_TauntSpyBuyALife"
-			"item_description"	"#TF_TauntSpyBuyALife_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_buy_a_life"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"spy"	"1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"spy"	"scenes/player/spy/low/taunt_buy_a_life.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"spy"	"models/player/items/taunts/cash_wad.mdl"
-				}
-			}
-		}
-		"1109"
-		{
-			"name"	"Results Are In Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"		"#TF_TauntMedicXRay"
-			"item_description"	"#TF_TauntMedicXRay_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_results_are_in"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"medic"	"1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"medic"	"scenes/player/medic/low/taunt_xray.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"medic"	"models/player/items/taunts/medic_xray_taunt.mdl"
-				}
-			}
-		}
-		"1110"
-		{
-			"name"	"RPS Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"	"#TF_TauntAllClassRPS"
-			"item_description"	"#TF_TauntAllClassRPS_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_rps"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"scout"	"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"	"1"
-				"heavy"	"1"
-				"spy" "1"
-				"engineer" "1"
-				"pyro" "1"
-			}
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-				"taunt attack name"
-				{
-					"attribute_class"	"taunt_attack_name"
-					"value"				"TAUNTATK_RPS_PARTICLE"
-				}
-				"taunt attack time"
-				{
-					"attribute_class"	"taunt_attack_time"
-					"value"				"2.6"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"scout"		"scenes\player\scout\low\taunt_rps_start.vcd"
-					"sniper"	"scenes\player\sniper\low\taunt_rps_start.vcd"
-					"soldier"	"scenes\player\soldier\low\taunt_rps_start.vcd"
-					"demoman"	"scenes\player\demoman\low\taunt_rps_start.vcd"
-					"medic"		"scenes\player\medic\low\taunt_rps_start.vcd"
-					"heavy"		"scenes\player\heavy\low\taunt_rps_start.vcd"
-					"spy"		"scenes\player\spy\low\taunt_rps_start.vcd"
-					"engineer"	"scenes\player\engineer\low\taunt_rps_start.vcd"
-					"pyro"		"scenes\player\pyro\low\taunt_rps_start.vcd"
-				}
-				"custom_partner_taunt_initiator_per_class"
-				{
-					"scout"
-					{
-						"1"		"scenes\player\scout\low\taunt_rps_rock_win.vcd"
-						"2"		"scenes\player\scout\low\taunt_rps_paper_win.vcd"
-						"3"		"scenes\player\scout\low\taunt_rps_scissors_win.vcd"
-						"4"		"scenes\player\scout\low\taunt_rps_rock_lose.vcd"
-						"5"		"scenes\player\scout\low\taunt_rps_paper_lose.vcd"
-						"6"		"scenes\player\scout\low\taunt_rps_scissors_lose.vcd"
-					}
-					"sniper"
-					{
-						"1"		"scenes\player\sniper\low\taunt_rps_rock_win.vcd"
-						"2"		"scenes\player\sniper\low\taunt_rps_paper_win.vcd"
-						"3"		"scenes\player\sniper\low\taunt_rps_scissors_win.vcd"
-						"4"		"scenes\player\sniper\low\taunt_rps_rock_lose.vcd"
-						"5"		"scenes\player\sniper\low\taunt_rps_paper_lose.vcd"
-						"6"		"scenes\player\sniper\low\taunt_rps_scissors_lose.vcd"
-					}
-					"soldier"
-					{
-						"1"		"scenes\player\soldier\low\taunt_rps_rock_win.vcd"
-						"2"		"scenes\player\soldier\low\taunt_rps_paper_win.vcd"
-						"3"		"scenes\player\soldier\low\taunt_rps_scissors_win.vcd"
-						"4"		"scenes\player\soldier\low\taunt_rps_rock_lose.vcd"
-						"5"		"scenes\player\soldier\low\taunt_rps_paper_lose.vcd"
-						"6"		"scenes\player\soldier\low\taunt_rps_scissors_lose.vcd"
-					}
-					"demoman"
-					{
-						"1"		"scenes\player\demoman\low\taunt_rps_rock_win.vcd"
-						"2"		"scenes\player\demoman\low\taunt_rps_paper_win.vcd"
-						"3"		"scenes\player\demoman\low\taunt_rps_scissors_win.vcd"
-						"4"		"scenes\player\demoman\low\taunt_rps_rock_lose.vcd"
-						"5"		"scenes\player\demoman\low\taunt_rps_paper_lose.vcd"
-						"6"		"scenes\player\demoman\low\taunt_rps_scissors_lose.vcd"
-					}
-					"medic"
-					{
-						"1"		"scenes\player\medic\low\taunt_rps_rock_win.vcd"
-						"2"		"scenes\player\medic\low\taunt_rps_paper_win.vcd"
-						"3"		"scenes\player\medic\low\taunt_rps_scissors_win.vcd"
-						"4"		"scenes\player\medic\low\taunt_rps_rock_lose.vcd"
-						"5"		"scenes\player\medic\low\taunt_rps_paper_lose.vcd"
-						"6"		"scenes\player\medic\low\taunt_rps_scissors_lose.vcd"
-					}
-					"heavy"
-					{
-						"1"		"scenes\player\heavy\low\taunt_rps_rock_win.vcd"
-						"2"		"scenes\player\heavy\low\taunt_rps_paper_win.vcd"
-						"3"		"scenes\player\heavy\low\taunt_rps_scissors_win.vcd"
-						"4"		"scenes\player\heavy\low\taunt_rps_rock_lose.vcd"
-						"5"		"scenes\player\heavy\low\taunt_rps_paper_lose.vcd"
-						"6"		"scenes\player\heavy\low\taunt_rps_scissors_lose.vcd"
-					}
-					"spy"
-					{
-						"1"		"scenes\player\spy\low\taunt_rps_rock_win.vcd"
-						"2"		"scenes\player\spy\low\taunt_rps_paper_win.vcd"
-						"3"		"scenes\player\spy\low\taunt_rps_scissors_win.vcd"
-						"4"		"scenes\player\spy\low\taunt_rps_rock_lose.vcd"
-						"5"		"scenes\player\spy\low\taunt_rps_paper_lose.vcd"
-						"6"		"scenes\player\spy\low\taunt_rps_scissors_lose.vcd"
-					}
-					"engineer"
-					{
-						"1"		"scenes\player\engineer\low\taunt_rps_rock_win.vcd"
-						"2"		"scenes\player\engineer\low\taunt_rps_paper_win.vcd"
-						"3"		"scenes\player\engineer\low\taunt_rps_scissors_win.vcd"
-						"4"		"scenes\player\engineer\low\taunt_rps_rock_lose.vcd"
-						"5"		"scenes\player\engineer\low\taunt_rps_paper_lose.vcd"
-						"6"		"scenes\player\engineer\low\taunt_rps_scissors_lose.vcd"
-					}
-					"pyro"
-					{
-						"1"		"scenes\player\pyro\low\taunt_rps_rock_win.vcd"
-						"2"		"scenes\player\pyro\low\taunt_rps_paper_win.vcd"
-						"3"		"scenes\player\pyro\low\taunt_rps_scissors_win.vcd"
-						"4"		"scenes\player\pyro\low\taunt_rps_rock_lose.vcd"
-						"5"		"scenes\player\pyro\low\taunt_rps_paper_lose.vcd"
-						"6"		"scenes\player\pyro\low\taunt_rps_scissors_lose.vcd"
-					}
-				}
-				"custom_partner_taunt_receiver_per_class"
-				{
-					"scout"
-					{
-						"1"		"scenes\player\scout\low\taunt_rps_rock_win_noinit.vcd"
-						"2"		"scenes\player\scout\low\taunt_rps_paper_win_noinit.vcd"
-						"3"		"scenes\player\scout\low\taunt_rps_scissors_win_noinit.vcd"
-						"4"		"scenes\player\scout\low\taunt_rps_rock_lose_noinit.vcd"
-						"5"		"scenes\player\scout\low\taunt_rps_paper_lose_noinit.vcd"
-						"6"		"scenes\player\scout\low\taunt_rps_scissors_lose_noinit.vcd"
-					}
-					"sniper"
-					{
-						"1"		"scenes\player\sniper\low\taunt_rps_rock_win_noinit.vcd"
-						"2"		"scenes\player\sniper\low\taunt_rps_paper_win_noinit.vcd"
-						"3"		"scenes\player\sniper\low\taunt_rps_scissors_win_noinit.vcd"
-						"4"		"scenes\player\sniper\low\taunt_rps_rock_lose_noinit.vcd"
-						"5"		"scenes\player\sniper\low\taunt_rps_paper_lose_noinit.vcd"
-						"6"		"scenes\player\sniper\low\taunt_rps_scissors_lose_noinit.vcd"
-					}
-					"soldier"
-					{
-						"1"		"scenes\player\soldier\low\taunt_rps_rock_win_noinit.vcd"
-						"2"		"scenes\player\soldier\low\taunt_rps_paper_win_noinit.vcd"
-						"3"		"scenes\player\soldier\low\taunt_rps_scissors_win_noinit.vcd"
-						"4"		"scenes\player\soldier\low\taunt_rps_rock_lose_noinit.vcd"
-						"5"		"scenes\player\soldier\low\taunt_rps_paper_lose_noinit.vcd"
-						"6"		"scenes\player\soldier\low\taunt_rps_scissors_lose_noinit.vcd"
-					}
-					"demoman"
-					{
-						"1"		"scenes\player\demoman\low\taunt_rps_rock_win_noinit.vcd"
-						"2"		"scenes\player\demoman\low\taunt_rps_paper_win_noinit.vcd"
-						"3"		"scenes\player\demoman\low\taunt_rps_scissors_win_noinit.vcd"
-						"4"		"scenes\player\demoman\low\taunt_rps_rock_lose_noinit.vcd"
-						"5"		"scenes\player\demoman\low\taunt_rps_paper_lose_noinit.vcd"
-						"6"		"scenes\player\demoman\low\taunt_rps_scissors_lose_noinit.vcd"
-					}
-					"medic"
-					{
-						"1"		"scenes\player\medic\low\taunt_rps_rock_win_noinit.vcd"
-						"2"		"scenes\player\medic\low\taunt_rps_paper_win_noinit.vcd"
-						"3"		"scenes\player\medic\low\taunt_rps_scissors_win_noinit.vcd"
-						"4"		"scenes\player\medic\low\taunt_rps_rock_lose_noinit.vcd"
-						"5"		"scenes\player\medic\low\taunt_rps_paper_lose_noinit.vcd"
-						"6"		"scenes\player\medic\low\taunt_rps_scissors_lose_noinit.vcd"
-					}
-					"heavy"
-					{
-						"1"		"scenes\player\heavy\low\taunt_rps_rock_win_noinit.vcd"
-						"2"		"scenes\player\heavy\low\taunt_rps_paper_win_noinit.vcd"
-						"3"		"scenes\player\heavy\low\taunt_rps_scissors_win_noinit.vcd"
-						"4"		"scenes\player\heavy\low\taunt_rps_rock_lose_noinit.vcd"
-						"5"		"scenes\player\heavy\low\taunt_rps_paper_lose_noinit.vcd"
-						"6"		"scenes\player\heavy\low\taunt_rps_scissors_lose_noinit.vcd"
-					}
-					"spy"
-					{
-						"1"		"scenes\player\spy\low\taunt_rps_rock_win_noinit.vcd"
-						"2"		"scenes\player\spy\low\taunt_rps_paper_win_noinit.vcd"
-						"3"		"scenes\player\spy\low\taunt_rps_scissors_win_noinit.vcd"
-						"4"		"scenes\player\spy\low\taunt_rps_rock_lose_noinit.vcd"
-						"5"		"scenes\player\spy\low\taunt_rps_paper_lose_noinit.vcd"
-						"6"		"scenes\player\spy\low\taunt_rps_scissors_lose_noinit.vcd"
-					}
-					"engineer"
-					{
-						"1"		"scenes\player\engineer\low\taunt_rps_rock_win_noinit.vcd"
-						"2"		"scenes\player\engineer\low\taunt_rps_paper_win_noinit.vcd"
-						"3"		"scenes\player\engineer\low\taunt_rps_scissors_win_noinit.vcd"
-						"4"		"scenes\player\engineer\low\taunt_rps_rock_lose_noinit.vcd"
-						"5"		"scenes\player\engineer\low\taunt_rps_paper_lose_noinit.vcd"
-						"6"		"scenes\player\engineer\low\taunt_rps_scissors_lose_noinit.vcd"
-					}
-					"pyro"
-					{
-						"1"		"scenes\player\pyro\low\taunt_rps_rock_win_noinit.vcd"
-						"2"		"scenes\player\pyro\low\taunt_rps_paper_win_noinit.vcd"
-						"3"		"scenes\player\pyro\low\taunt_rps_scissors_win_noinit.vcd"
-						"4"		"scenes\player\pyro\low\taunt_rps_rock_lose_noinit.vcd"
-						"5"		"scenes\player\pyro\low\taunt_rps_paper_lose_noinit.vcd"
-						"6"		"scenes\player\pyro\low\taunt_rps_scissors_lose_noinit.vcd"
-					}
-				}
-				"taunt_separation_forward_distance"	"80"
-				"taunt_separation_right_distance"	"5"
-				"is_partner_taunt" "1"
-			}
-		}
 		"1111"
 		{
 			"name"	"Skullcracker Taunt"
@@ -10160,156 +9798,6 @@
 				"custom_taunt_prop_per_class"
 				{
 					"pyro"	"models/player/items/taunts/balloon_animal_pyro/balloon_animal_pyro.mdl"
-				}
-			}
-		}
-		"1113"
-		{
-			"name"	"Fresh Brewed Victory Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"		"#TF_TauntSoldierCoffee"
-			"item_description"	"#TF_TauntSoldierCoffee_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_fresh_brewed"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"soldier"	"1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"soldier"	"scenes/player/soldier/low/taunt_coffee.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"soldier"	"models/player/items/taunts/wupass_mug/wupass_mug.mdl"
-				}
-			}
-		}
-		"1114"
-		{
-			"name"	"Spent Well Spirits Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"			"#TF_TauntDemomanNuke"
-			"item_description"	"#TF_TauntDemomanNuke_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_spent_well"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"demoman"	"1"
-			}
-			"visuals"
-			{
-				"styles"
-				{
-					"0"
-					{
-						"skin_red" "0"
-						"skin_blu" "1"
-					}
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"demoman"	"scenes/player/demoman/low/taunt_nuke.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"demoman"	"models/player/items/taunts/demo_nuke_bottle/demo_nuke_bottle.mdl"
-				}
-			}
-		}
-		"1115"
-		{
-			"name"	"Rancho Relaxo Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"			"#TF_TauntEngineerRancho"
-			"item_description"	"#TF_TauntEngineerRancho_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_rancho_relaxo"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"engineer"	"1"
-			}
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"engineer"	"scenes/player/engineer/low/taunt_killer_time_intro.vcd"
-				}
-				"custom_taunt_outro_scene_per_class"
-				{
-					"engineer"	"scenes/player/engineer/low/taunt_killer_time_outro.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"engineer"	"models/player/items/taunts/engys_new_chair/engys_new_chair_articlulated.mdl"
-				}
-				"custom_taunt_prop_scene_per_class"
-				{
-					"engineer"	"scenes/player/items/taunts/engys_new_chair_intro.vcd"
-				}
-				"custom_taunt_prop_outro_scene_per_class"
-				{
-					"engineer"	"scenes/player/items/taunts/engys_new_chair_outro.vcd"
-				}
-				"particle_attachment"		"taunt_effect"
-				"min_taunt_time"		"5"
-				"stop_taunt_if_moved"	"1"
-			}
-		}
-		"1116"
-		{
-			"name"	"I See You Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"		"#TF_TauntSniperISeeYou"
-			"item_description"	"#TF_TauntSniperISeeYou_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_i_see_you"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"sniper"	"1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"sniper"	"scenes\player\sniper\low\taunt_i_see_you_primary.vcd"
 				}
 			}
 		}
@@ -10411,8 +9899,8 @@
 				"custom_taunt_scene_per_class"
 				{
 					"scout"		"scenes\player\scout\low\conga.vcd"
-					"sniper"	"scenes\player\sniper\low\conga.vcd"
-					"soldier"	"scenes\player\soldier\low\conga.vcd"
+					"sniper"	"scenes\player\soldier\low\conga.vcd"
+					"soldier"	"scenes\player\heavy\low\conga.vcd"
 					"demoman"	"scenes\player\demoman\low\conga.vcd"
 					"medic"		"scenes\player\medic\low\conga.vcd"
 					"heavy"		"scenes\player\heavy\low\conga.vcd"
@@ -10425,177 +9913,6 @@
 			"visuals"
 			{
 				"custom_sound0"		"music.conga_loop"
-			}
-		}
-		"1119"
-		{
-			"name"	"Deep Fried Desire Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"			"#TF_TauntScoutChickenBucket"
-			"item_description"	"#TF_TauntScoutChickenBucket_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_deep_fried"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"scout"	"1"
-				"agent" "1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"scout"	"scenes/player/scout/low/taunt_chicken_bucket.vcd"
-					"agent"	"scenes/player/scout/low/taunt_chicken_bucket.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"scout"	"models/player/items/taunts/chicken_bucket/chicken_bucket.mdl"
-					"agent"	"models/player/items/taunts/chicken_bucket/chicken_bucket.mdl"
-				}
-			}
-		}
-		"1120"
-		{
-			"name"	"Oblooterated Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"			"#TF_TauntDemomanWoohoo"
-			"item_description"			"#TF_TauntDemomanWoohoo_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_oblooterated"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"demoman"	"1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"demoman"	"scenes/player/demoman/low/woohoo.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"demoman"	"models/player/items/taunts/beer_crate/beer_crate.mdl"
-				}
-			}
-		}
-		"1150"
-		{
-			"name"	"The Quickiebomb Launcher"
-			"first_sale_date"	"2014/12/23"
-			"item_class"	"tf_weapon_pipebomblauncher"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"		"1"
-				"can_deal_gib_damage"	"1"
-				"can_be_equipped_by_soldier_or_demo"	"1"
-				"can_deal_critical_damage"	"1"
-				"can_deal_long_distance_damage"	"1"
-			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_PipebombLauncher"
-			"item_name" "#TF_Weapon_Sticky_Quickie"
-			"item_slot"	"secondary"
-			"anim_slot"	"primary"
-			"item_quality"	"unique"
-			"propername"	"1"
-			"item_logname"	"quickiebomb_launcher"
-			"item_iconname"	"quickiebomb_launcher"
-			"min_ilevel"	"1"
-			"max_ilevel"	"99"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_kingmaker_sticky/c_kingmaker_sticky"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"inspect_panel_dist" 			"50"
-			"model_player"	"models/workshop/weapons/c_models/c_kingmaker_sticky/c_kingmaker_sticky.mdl"
-			"attach_to_hands"	"1"
-			"used_by_classes"
-			{
-				"demoman"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -10"				
-			}
-			"attributes"
-			{
-				"stickybomb quickie"
-				{
-					"attribute_class"	"stickybomb_quickie"
-					"value"	"1"
-				}
-				"sticky arm time bonus"
-				{
-					"attribute_class"	"sticky_arm_time"
-					"value"	"-0.3"
-				}
-				"stickybomb charge rate"
-				{
-					"attribute_class"	"stickybomb_charge_rate"
-					"value"	"0.3"
-				}
-				"stickybomb_charge_damage_increase"
-				{
-					"attribute_class"	"stickybomb_charge_damage_increase"
-					"value"	"1.35"
-				}
-				"stickies detonate stickies"
-				{
-					"attribute_class"	"stickies_detonate_stickies"
-					"value"	"1"
-				}
-				"clip size penalty"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"	"0.5"
-				}
-				"damage penalty"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"0.85"
-				}
-				"custom projectile model"
-				{
-					"attribute_class"	"custom_projectile_model"
-					"value"				"models/workshop/weapons/c_models/c_kingmaker_sticky/w_kingmaker_stickybomb.mdl"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_AirBurster.Single"
-				"sound_burst"			"Weapon_AirBurster.SingleCrit"
-				"sound_special1"		"Weapon_AirBurster.Explode"
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-		}
-		"1151"
-		{
-			"name"	"The Iron Bomber"
-			"prefab"	"weapon_quadball"
-			"first_sale_date"	"2014/12/23"
-			"particle_suffix"	"iron_bomber"
-			"show_in_armory"	"1"
-			"tags"
-			{
-				"can_be_festivized"		"1"
 			}
 		}
 		"1153"
@@ -10619,45 +9936,6 @@
 					}
 				}
 			}
-		}
-		"1155"
-		{
-			"name"	"TF_WEAPON_PASSTIME_GUN"
-			"tags"
-			{
-			}
-			"item_class"	"tf_weapon_passtime_gun"
-			"craft_class"	""	
-			"craft_material_type"	"" 
-			"item_type_name"	"#Weapon_Passtime_Gun"
-			"item_name"	"#Weapon_Passtime_Gun"
-			"item_slot"	"utility"
-			"anim_slot"	"MELEE_ALLCLASS"
-			"attach_to_hands"	"1"
-			"hidden"	"1"
-			"show_in_armory"	"1"
-			"item_quality"	"normal"
-			"baseitem"	"1"
-			"min_ilevel"	"1"
-			"max_ilevel"	"1"
-			"image_inventory"	"backpack/weapons/w_models/w_wrench"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player" "models/passtime/ball/passtime_ball.mdl"
-			"used_by_classes"
-			{
-				"demoman"	"1"
-				"heavy"	"1"
-				"engineer" "1"
-				"medic"	"1"
-				"sniper" "1"
-				"spy" "1"
-				"pyro" "1"
-				"soldier"	"1"
-				"scout"	"1"
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
 		"1157"
 		{
@@ -10722,8 +10000,8 @@
 				"custom_taunt_scene_per_class"
 				{
 					"scout"		"scenes\player\scout\low\taunt_russian.vcd"
-					"sniper"	"scenes\player\sniper\low\taunt_russian.vcd"
-					"soldier"	"scenes\player\soldier\low\taunt_russian.vcd"
+					"sniper"	"scenes\player\soldier\low\taunt_russian.vcd"
+					"soldier"	"scenes\player\heavy\low\taunt_russian.vcd"
 					"mercenary"	"scenes\player\soldier\low\taunt_russian.vcd"
 					"demoman"	"scenes\player\demoman\low\taunt_russian.vcd"
 					"medic"		"scenes\player\medic\low\taunt_russian.vcd"
@@ -10740,233 +10018,6 @@
 			"visuals"
 			{
 				"custom_sound0"		"music.russian"
-			}
-		}
-		"1172"
-		{
-			"name"	"Taunt: The Victory Lap"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2016/10/19"
-			"item_name"	"#TF_TauntAllClassKart"
-			"item_description"	"#TF_TauntAllClassKart_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_bumpercar"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"show_in_armory" "0"
-			"used_by_classes"
-			{
-				"scout"		"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"		"1"
-				"heavy"		"1"
-				"spy" 		"1"
-				"engineer" 	"1"
-				"pyro" 		"1"
-			}
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-				"taunt move speed"
-				{
-					"attribute_class"		"taunt_move_speed"
-					"value"		"200"
-				}
-				"taunt move acceleration time"
-				{
-					"attribute_class"		"taunt_move_acceleration_time"
-					"value"		"0.300000"
-				}
-				"taunt turn speed"
-				{
-					"attribute_class"		"taunt_turn_speed"
-					"value"		"60"
-				}
-				"taunt turn acceleration time"
-				{
-					"attribute_class"		"taunt_turn_acceleration_time"
-					"value"		"0.200000"
-				}
-				"taunt success sound"
-				{
-					"attribute_class"		"taunt_success_sound"
-					"value"		"Taunt.BumperCarGoLoop"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"sniper"	"scenes\player\sniper\low\taunt_vehicle_allclass.vcd"
-					"soldier"	"scenes\player\soldier\low\taunt_vehicle_allclass.vcd"
-					"medic"		"scenes\player\medic\low\taunt_vehicle_allclass.vcd"
-					"heavy"		"scenes\player\heavy\low\taunt_vehicle_allclass.vcd"
-					"spy"		"scenes\player\spy\low\taunt_vehicle_allclass.vcd"
-					"engineer"	"scenes\player\engineer\low\taunt_vehicle_allclass.vcd"
-					"pyro"		"scenes\player\pyro\low\taunt_vehicle_allclass.vcd"
-					"scout"		"scenes\player\scout\low\taunt_vehicle_allclass.vcd"
-					"demoman"	"scenes\player\demoman\low\taunt_vehicle_allclass.vcd"
-				}
-				"custom_taunt_outro_scene_per_class"
-				{
-					"sniper"	"scenes\player\sniper\low\taunt_vehicle_end_allclass.vcd"
-					"soldier"	"scenes\player\soldier\low\taunt_vehicle_end_allclass.vcd"
-					"medic"		"scenes\player\medic\low\taunt_vehicle_end_allclass.vcd"
-					"heavy"		"scenes\player\heavy\low\taunt_vehicle_end_allclass.vcd"
-					"spy"		"scenes\player\spy\low\taunt_vehicle_end_allclass.vcd"
-					"engineer"	"scenes\player\engineer\low\taunt_vehicle_end_allclass.vcd"
-					"pyro"		"scenes\player\pyro\low\taunt_vehicle_end_allclass.vcd"
-					"scout"		"scenes\player\scout\low\taunt_vehicle_end_allclass.vcd"
-					"demoman"	"scenes\player\demoman\low\taunt_vehicle_end_allclass.vcd"
-				}
-				"custom_taunt_input_remap"
-				{
-					"IN_ATTACK"
-					{
-						"pressed"
-						{
-							"sniper"	"scenes\player\sniper\low\taunt_vehicle_honk_allclass.vcd"
-							"soldier"	"scenes\player\soldier\low\taunt_vehicle_honk_allclass.vcd"
-							"medic"		"scenes\player\medic\low\taunt_vehicle_honk_allclass.vcd"
-							"heavy"		"scenes\player\heavy\low\taunt_vehicle_honk_allclass.vcd"
-							"spy"		"scenes\player\spy\low\taunt_vehicle_honk_allclass.vcd"
-							"engineer"	"scenes\player\engineer\low\taunt_vehicle_honk_allclass.vcd"
-							"pyro"		"scenes\player\pyro\low\taunt_vehicle_honk_allclass.vcd"
-							"scout"		"scenes\player\scout\low\taunt_vehicle_honk_allclass.vcd"
-							"demoman"	"scenes\player\demoman\low\taunt_vehicle_honk_allclass.vcd"
-						}
-					}
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"sniper"	"models/player/items/taunts/bumpercar/parts/bumpercar.mdl"
-					"soldier"	"models/player/items/taunts/bumpercar/parts/bumpercar.mdl"
-					"medic"		"models/player/items/taunts/bumpercar/parts/bumpercar.mdl"
-					"heavy"		"models/player/items/taunts/bumpercar/parts/bumpercar.mdl"
-					"spy"		"models/player/items/taunts/bumpercar/parts/bumpercar.mdl"
-					"engineer"	"models/player/items/taunts/bumpercar/parts/bumpercar.mdl"
-					"pyro"		"models/player/items/taunts/bumpercar/parts/bumpercar.mdl"
-					"scout"		"models/player/items/taunts/bumpercar/parts/bumpercar.mdl"
-					"demoman"	"models/player/items/taunts/bumpercar/parts/bumpercar.mdl"
-				}
-			}
-		}
-
-		"1162"
-		{
-			"name"	"Taunt: Mannrobics"
-			"prefab"	"taunt"
-			"first_sale_date"		"2015/12/14"
-			"item_name"	"#TF_TauntAllClassAerobic"
-			"item_description"	"#TF_TauntAllClassAerobic_Desc"
-			"ad_text"			"#TF_TauntAllClassAerobic_AdText"
-			"image_inventory"	"backpack/player/items/all_class/taunt_manrobic"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"used_by_classes"
-			{
-				"scout"		"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"		"1"
-				"heavy"		"1"
-				"spy" 		"1"
-				"engineer" 	"1"
-				"pyro" 		"1"
-			}
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-				"taunt move speed"
-				{
-					"attribute_class"	"taunt_move_speed"
-					"value"				"50"
-				}
-				"taunt turn speed"
-				{
-					"attribute_class"	"taunt_turn_speed"
-					"value"				"50"
-				}
-				"taunt turn acceleration time"
-				{
-					"attribute_class"	"taunt_turn_acceleration_time"
-					"value"				"0.2"
-				}
-				"taunt mimic"
-				{
-					"attribute_class"	"taunt_mimic"
-					"value"				"1"
-				}
-				"taunt success sound loop"
-				{
-					"attribute_class"	"taunt_success_sound_loop"
-					"value"				"music.aerobic_loop"
-				}
-			}
-			"taunt"
-			{
-				"is_partner_taunt" "1"
-				"custom_taunt_scene_per_class"
-				{
-						"sniper"	"scenes\player\sniper\low\taunt_aerobic_b.vcd"
-						"soldier"	"scenes\player\soldier\low\taunt_aerobic_b.vcd"
-						"medic"	"scenes\player\medic\low\taunt_aerobic_b.vcd"
-						"heavy"		"scenes\player\heavy\low\taunt_aerobic_b.vcd"
-						"spy"		"scenes\player\spy\low\taunt_aerobic_b.vcd"
-						"engineer"	"scenes\player\engineer\low\taunt_aerobic_b.vcd"	
-						"pyro"		"scenes\player\pyro\low\taunt_aerobic_b.vcd"
-						"scout"		"scenes\player\scout\low\taunt_aerobic_b.vcd"
-						"demoman"	"scenes\player\demoman\low\taunt_aerobic_b.vcd"	
-				}
-				"custom_taunt_input_remap"
-				{
-					"IN_ATTACK"
-					{
-						"pressed"
-						{	
-							"sniper"	"scenes\player\sniper\low\taunt_aerobic_a.vcd"
-							"soldier"	"scenes\player\soldier\low\taunt_aerobic_a.vcd"
-							"medic"	"scenes\player\medic\low\taunt_aerobic_a.vcd"
-							"heavy"		"scenes\player\heavy\low\taunt_aerobic_a.vcd"
-							"spy"		"scenes\player\spy\low\taunt_aerobic_a.vcd"
-							"engineer"	"scenes\player\engineer\low\taunt_aerobic_a.vcd"	
-							"pyro"		"scenes\player\pyro\low\taunt_aerobic_a.vcd"
-							"scout"		"scenes\player\scout\low\taunt_aerobic_a.vcd"
-							"demoman"	"scenes\player\demoman\low\taunt_aerobic_a.vcd"							
-						}
-					}
-					"IN_ATTACK2"
-					{
-						"pressed"
-						{
-							"sniper"	"scenes\player\sniper\low\taunt_aerobic_b.vcd"
-							"soldier"	"scenes\player\soldier\low\taunt_aerobic_b.vcd"
-							"medic"	"scenes\player\medic\low\taunt_aerobic_b.vcd"
-							"heavy"		"scenes\player\heavy\low\taunt_aerobic_b.vcd"
-							"spy"		"scenes\player\spy\low\taunt_aerobic_b.vcd"
-							"engineer"	"scenes\player\engineer\low\taunt_aerobic_b.vcd"	
-							"pyro"		"scenes\player\pyro\low\taunt_aerobic_b.vcd"
-							"scout"		"scenes\player\scout\low\taunt_aerobic_b.vcd"
-							"demoman"	"scenes\player\demoman\low\taunt_aerobic_b.vcd"			
-						}
-					}					
-				}
 			}
 		}
 		"1168"
@@ -11005,562 +10056,6 @@
 				}
 			}
 		}
-		"1174"
-		{
-			"name"	"Taunt: The Table Tantrum"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2016/12/15"
-			"item_name"		"#TF_TauntTableTantrum"
-			"item_description"	"#TF_TauntTableTantrum_Desc"
-			"ad_text"			"#TF_TauntTableTantrum_AdText"
-			"image_inventory"		"backpack/player/items/all_class/taunt_table_flip"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"item_quality"		"unique"
-			"min_ilevel"		"1"
-			"max_ilevel"		"100"
-			"used_by_classes"
-			{
-				"heavy"		"1"
-			}
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"heavy"	"scenes/player/heavy/low/taunt_table_flip_intro.vcd"
-				}
-				"custom_taunt_outro_scene_per_class"
-				{
-					"heavy"	"scenes/player/heavy/low/taunt_table_flip_outro.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"heavy"	"models/player/items/heavy/heavy_table_flip_prop.mdl"
-				}
-				"custom_taunt_prop_scene_per_class"
-				{
-					"heavy"	"scenes/player/items/taunts/taunt_table_flip_prop_intro.vcd"
-				}
-				"custom_taunt_prop_outro_scene_per_class"
-				{
-					"heavy"	"scenes/player/items/taunts/taunt_table_flip_prop_outro_nojoule.vcd"
-				}
-			}
-		}
-		"1175"
-		{
-			"name"	"Taunt: The Boiling Point"
-			"prefab"	"taunt"
-			"first_sale_date"		"2016/12/15"
-			"item_name"		"#TF_TauntBoilingPoint"
-			"item_description"		"#TF_TauntBoilingPoint_Desc"
-			"image_inventory"		"backpack/player/items/all_class/taunt_table_flip_joule"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"item_quality"		"unique"
-			"min_ilevel"		"1"
-			"max_ilevel"		"100"
-			"used_by_classes"
-			{
-				"heavy"		"1"
-			}
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"heavy"	"scenes/player/heavy/low/taunt_table_flip_intro.vcd"
-				}
-				"custom_taunt_outro_scene_per_class"
-				{
-					"heavy"	"scenes/player/heavy/low/taunt_table_flip_outro.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"heavy"	"models/player/items/heavy/heavy_table_flip_joule_prop.mdl"
-				}
-				"custom_taunt_prop_scene_per_class"
-				{
-					"heavy"	"scenes/player/items/taunts/taunt_table_flip_prop_intro.vcd"
-				}
-				"custom_taunt_prop_outro_scene_per_class"
-				{
-					"heavy"	"scenes/player/items/taunts/taunt_table_flip_prop_outro.vcd"
-				}
-			}
-		}
-		"1178"
-		{
-			"name"	"The Dragon's Fury"
-			"item_class"	"tf_weapon_rocketlauncher_fireball"
-			"craft_class"	"weapon" 
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"		"1"
-				"can_deal_posthumous_damage"	"1"
-				"can_be_festivized"		"1"
-			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_FireballLauncher"
-			"particle_suffix"	"dragons_fury"
-			"propername"	"1"
-			"item_name"	"#TF_Weapon_DragonsFury"
-			"item_description"	"#TF_Weapon_DragonsFury_Desc"
-			"item_slot"	"primary"
-			"anim_slot"		"primary"
-			"item_quality"	"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"item_logname"	"dragons_fury"
-			"item_iconname"	"dragons_fury"
-			"image_inventory"	"backpack/weapons/c_models/c_flameball/c_flameball"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_flameball/c_flameball.mdl"
-			"attach_to_hands" "1"
-			"inspect_panel_dist" "91"
-			"used_by_classes"
-			{
-				"pyro"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 -3 -10"
-				"item_meter_charge_type"				"1"
-				"item_meter_charge_rate"				"0.8"
-				"meter_label"							"#TF_Pressure"
-				"dragons fury neutral properties"		"1"
-				"dragons fury positive properties"		"1"
-				"dragons fury negative properties"		"1"
-			}
-			"attributes"
-			{
-				"extinguish restores health"
-				{
-					"attribute_class"	"extinguish_restores_health"
-					"value"	"20"
-				}
-				"hidden primary max ammo bonus"
-				{
-					"attribute_class"	"mult_maxammo_primary"
-					"value"	"0.2"
-				}
-				"airblast cost scale hidden"
-				{
-					"attribute_class"	"mult_airblast_cost"
-					"value"	"0.25"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_DragonsFury.Single"
-				"sound_special1"		"Weapon_DragonsFury.Impact"
-				"animation_replacement"
-				{
-					"ACT_VM_PRIMARYATTACK"		"ACT_PRIMARY_VM_PRIMARYATTACK_3"
-
-					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_ITEM4_VM_INSPECT_START"
-					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_ITEM4_VM_INSPECT_IDLE"
-					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_ITEM4_VM_INSPECT_END"
-
-					"ACT_MP_ATTACK_CROUCH_PRIMARY"		"ACT_MP_ATTACK_CROUCH_PRIMARY_ALT"
-					"ACT_MP_ATTACK_STAND_PRIMARY"		"ACT_MP_ATTACK_STAND_PRIMARY_ALT"
-					"ACT_MP_ATTACK_SWIM_PRIMARY"		"ACT_MP_ATTACK_SWIM_PRIMARY_ALT"
-
-					"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"	"ACT_MP_ATTACK_CROUCH_PRIMARY_ALT"
-					"ACT_MP_ATTACK_STAND_SECONDARYFIRE"		"ACT_MP_ATTACK_STAND_PRIMARY_ALT"
-					"ACT_MP_ATTACK_SWIM_SECONDARYFIRE"		"ACT_MP_ATTACK_SWIM_PRIMARY_ALT"
-				}
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-		}
-		"1179"
-		{
-			"name"	"The Thermal Thruster"
-			"item_class"			"tf_weapon_rocketpack"
-			"craft_class"			"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"item_logname"	"rocketpack"
-			"item_iconname"	"rocketpack"
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_RocketPack"
-			"item_name"			"#TF_ThermalThruster"
-			"item_description"	"#TF_ThermalThruster_Desc"
-			"item_slot"			"secondary"
-			"equip_region"		"back"
-			"anim_slot"			"ITEM4"
-			"image_inventory"	"backpack/weapons/c_models/c_rocketpack/c_rocketpack"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"inspect_panel_dist" 				"60"			
-			"model_player"	"models/weapons/c_models/c_rocketpack/c_rocketpack.mdl" 
-			"attach_to_hands"	"1"
-			"attach_to_hands_vm_only"	"1"
-			"extra_wearable" "models/weapons/c_models/c_rocketpack/c_rocketpack.mdl" 
-			"item_quality"	"unique"
-			"propername"	"1"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"backpack"		"1"
-				}
-			}
-			"used_by_classes"
-			{
-				"pyro"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 0 -9"	
-				"damage force increase hidden"	"1.5"
-				"taunt attack name"		"TAUNTATK_PYRO_GASBLAST"
-				"taunt attack time"		"4.7"
-				"item_meter_charge_type"						"1"
-				"item_meter_charge_rate"			"30"
-				"holster_anim_time"		"0.8"
-				"falling_impact_radius_pushback"	"1"
-				"thermal_thruster"					"1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"pyro"	"scenes/player/pyro/low/taunt_gasblast.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"pyro"	"models/player/items/taunts/matchbox/matchbox.mdl"
-				}
-			}
-			"visuals_red"
-			{
-				"skin" "0"
-			}
-			"visuals_blu"
-			{
-				"skin" "1"
-			}
-			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
-			"drop_sound"		"ui/item_metal_weapon_drop.wav"
-		}
-		"1181"
-		{
-			"name"	"The Hot Hand"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-			}
-			"show_in_armory"	"1"
-			"item_class"	"tf_weapon_slap"
-			"craft_class"	"" 
-			"craft_material_type"	"weapon"
-			"item_type_name"	"#TF_Weapon_Slap"
-			"item_name"	"#TF_Weapon_HotHand"
-			"item_description"	"#TF_Weapon_HotHand_Desc"
-			"item_slot"	"melee"
-			"anim_slot"	"MELEE_ALLCLASS"
-			"item_quality"	"unique"
-			"item_logname"	"hot_hand"
-			"item_iconname"	"hot_hand"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"image_inventory"	"backpack/weapons/c_models/c_slapping_glove/w_slapping_glove"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"		"models/weapons/c_models/c_slapping_glove/c_slapping_glove.mdl"
-			"model_world"		"models/weapons/c_models/c_slapping_glove/w_slapping_glove.mdl"	 
-			"attach_to_hands" "1"
-			"propername"	"1"
-			"used_by_classes"
-			{
-				"pyro"	"1"
-			}
-			"static_attrs"
-			{
-				"damage penalty"					"0.8"
-				"speed_boost_on_hit_enemy"			"1.0"
-			}
-			"attributes"
-			{
-				"disable weapon hiding for animations"
-				{
-					"attribute_class"	"disable_weapon_hiding_for_animations"
-					"value"	"1"
-				}
-			}
-			"visuals"
-			{
-				"animation_replacement"
-				{
-					"ACT_VM_IDLE"				"ACT_ITEM3_VM_IDLE"
-					"ACT_VM_DRAW"				"ACT_ITEM3_VM_DRAW"
-					"ACT_VM_HITCENTER"			"ACT_ITEM3_VM_PRIMARYATTACK"
-					"ACT_VM_SWINGHARD"			"ACT_ITEM3_VM_PRIMARYATTACK"
-					"ACT_MELEE_VM_INSPECT_START"		"ACT_ITEM3_VM_INSPECT_START"
-					"ACT_MELEE_VM_INSPECT_IDLE"			"ACT_ITEM3_VM_INSPECT_IDLE"
-					"ACT_MELEE_VM_INSPECT_END"			"ACT_ITEM3_VM_INSPECT_END"
-
-
-					"ACT_MP_ATTACK_STAND_MELEE_ALLCLASS"		"ACT_MP_ATTACK_STAND_ITEM3"
-					"ACT_MP_ATTACK_CROUCH_MELEE_ALLCLASS"		"ACT_MP_ATTACK_CROUCH_ITEM3"
-					"ACT_MP_ATTACK_SWIM_MELEE_ALLCLASS"			"ACT_MP_ATTACK_SWIM_ITEM3"
-				}
-				"player_poseparam"
-				{
-					"r_hand_grip"		"15"
-					"r_arm"				"3"
-				}
-				"sound_deploy"	"Weapon_Slap.Draw"
-				"sound_melee_miss"	"Weapon_Slap.Swing"
-				"sound_burst"	"Weapon_Slap.SwingCrit"
-				"sound_special1"	"Weapon_Slap.SwingFire"
-				"sound_special2"	"Weapon_Slap.SwingFireCrit"
-			}
-		}
-		"1190"
-		{
-			"name"		"The Second Banana"
-			"first_sale_date"		"2017/09/13"
-			"prefab"		"weapon_sandvich"
-			"craft_class"	"" 
-			"craft_material_type"	"weapon"
-			"item_name"		"#TF_Unique_Lunchbox_Banana"
-			"item_description"		"#TF_Lunchbox_Banana_desc"
-			"image_inventory"		"backpack/weapons/c_models/c_banana/c_banana"
-			"model_player"		"models/weapons/c_models/c_banana/c_banana.mdl"
-			"propername"		"1"
-			"show_in_armory"	"1"
-			"static_attrs"
-			{
-				"item_meter_charge_rate"	"10"
-			}
-			"attributes"
-			{
-				"lunchbox adds minicrits"
-				{
-					"attribute_class"	"set_weapon_mode"
-					"value"	"6"
-				}
-				"lunchbox healing decreased"
-				{
-					"attribute_class" "lunchbox_healing_scale"
-					"value" "0.67"
-				}
-				"charge recharge rate increased"
-				{
-					"attribute_class"	"charge_recharge_rate"
-					"value"	"1.5"
-				}
-			}
-		}
-		"1196"
-		{
-			"name"	"Taunt: Panzer Pants"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2018/10/18"
-			"item_name"	"#TF_Taunt_Tank"
-			"item_description"	"#TF_Taunt_Tank_Desc"
-			"ad_text"			"#TF_Taunt_Tank_AdText"
-			"image_inventory"	"backpack/player/items/all_class/taunt_tank"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"used_by_classes"
-			{
-				"soldier"	"1"
-			}
-			"attributes"
-			{
-				"taunt move speed"
-				{
-					"attribute_class"	"taunt_move_speed"
-					"value"				"65"
-				}
-				"taunt force move forward"
-				{
-					"attribute_class"	"taunt_force_move_forward"
-					"value"				"1"
-				}
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-				"taunt move acceleration time"
-				{
-					"attribute_class"	"taunt_move_acceleration_time"
-					"value"				"1"
-				}
-				"taunt turn speed"
-				{
-					"attribute_class"	"taunt_turn_speed"
-					"value"				"60"
-				}
-				"taunt turn acceleration time"
-				{
-					"attribute_class"	"taunt_turn_acceleration_time"
-					"value"				"0.2"
-				}
-				"taunt success sound loop"
-				{
-					"attribute_class"	"taunt_success_sound_loop"
-					"value"				"Taunt.TankForward"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"soldier"	"scenes\player\soldier\low\taunt_vehicle_tank.vcd"
-				}
-				"custom_taunt_outro_scene_per_class"
-				{
-					"soldier"	"scenes\player\soldier\low\taunt_vehicle_tank_end.vcd"
-				}
-				"custom_taunt_input_remap"
-				{
-					"IN_ATTACK"
-					{
-						"pressed"
-						{
-							"soldier"	"scenes\player\soldier\low\taunt_vehicle_tank_fire.vcd"
-						}
-					}
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"soldier"	"models/player/items/taunts/tank/tank.mdl"
-				}
-			}
-		}
-		"1197"
-		{
-			"name"	"Taunt: The Scooty Scoot"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2018/10/18"
-			"item_name"	"#TF_Taunt_Moped"
-			"item_description"	"#TF_Taunt_Moped_Desc"
-			"ad_text"			"#TF_Taunt_Moped_AdText"
-			"image_inventory"	"backpack/player/items/all_class/taunt_moped"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"used_by_classes"
-			{
-				"scout"	"1"
-				"agent" "1"
-			}
-			"attributes"
-			{
-				"taunt move speed"
-				{
-					"attribute_class"	"taunt_move_speed"
-					"value"				"100"
-				}
-				"taunt force move forward"
-				{
-					"attribute_class"	"taunt_force_move_forward"
-					"value"				"1"
-				}
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-				"taunt move acceleration time"
-				{
-					"attribute_class"	"taunt_move_acceleration_time"
-					"value"				"1"
-				}
-				"taunt turn speed"
-				{
-					"attribute_class"	"taunt_turn_speed"
-					"value"				"60"
-				}
-				"taunt turn acceleration time"
-				{
-					"attribute_class"	"taunt_turn_acceleration_time"
-					"value"				"0.2"
-				}
-				"taunt success sound loop"
-				{
-					"attribute_class"	"taunt_success_sound_loop"
-					"value"				"Taunt.MopedForward"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"scout"		"scenes\player\scout\low\taunt_vehicle_moped.vcd"
-					"agent"		"scenes\player\scout\low\taunt_vehicle_moped.vcd"
-				}
-				"custom_taunt_outro_scene_per_class"
-				{
-					"scout"		"scenes\player\scout\low\taunt_vehicle_moped_end.vcd"
-					"agent"		"scenes\player\scout\low\taunt_vehicle_moped_end.vcd"
-				}
-				"custom_taunt_input_remap"
-				{
-					"IN_ATTACK"
-					{
-						"pressed"
-						{
-							"scout"		"scenes\player\scout\low\taunt_vehicle_moped_wheely.vcd"
-							"agent"		"scenes\player\scout\low\taunt_vehicle_moped_wheely.vcd"
-						}
-					}
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"scout"		"models/player/items/taunts/scooter/scooter.mdl"
-					"agent"		"models/player/items/taunts/scooter/scooter.mdl"
-				}
-			}
-		}
-
-
 		"5617"
 		{
 			"name"		"Zombie Scout"
@@ -12121,273 +10616,6 @@
 				}
 			}
 		}
-		"9011"
-		{
-			"name"	"Lambda Flamethrower"
-			"prefab"	"weapon_flamethrower"
-			"baseitem"	"0"
-			"item_quality"	"developer"
-			"attributes"
-			{
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"10100.0"
-				}
-				"clip size bonus"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"	"1100.0"
-				}
-				"fire rate bonus"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"	"0.25"
-				}
-				"heal on hit for slowfire"
-				{
-					"attribute_class"	"add_onhit_addhealth"
-					"value"	"15.0"
-				}
-				"critboost on kill"
-				{
-					"attribute_class"	"add_onkill_critboost_time"
-					"value"	"10.0"
-				}
-				"Projectile speed increased"
-				{
-					"attribute_class"	"mult_projectile_speed"
-					"value"	"1.5"
-				}
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value"	"2.0"
-				}
-				"attach particle effect name"
-				{
-					"attribute_class"	"set_attached_particle_name"
-					"value"	"burningplayer_flyingbits"
-				}
-				"use robo voice"
-				{
-					"attribute_class"	"use_robo_voice"
-					"value"				"2"
-				}
-			}
-		}
-		"9012"
-		{
-			"name"	"ERROR"
-			"baseitem"	"0"
-			"item_class"	"saxxy"
-			"prefab"	"weapon_melee_allclass"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-				"can_be_equipped_by_soldier_or_demo"	"1"
-			}
-			"item_logname"	"have_an_error"
-			"item_iconname"	"have_an_error"
-			"show_in_armory"	"0"
-			"item_type_name"	"ERROR"
-			"item_name"	"ERROR"
-			"item_slot"	"melee"
-			"image_inventory"	"backpack/error"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/error.mdl"
-			"attach_to_hands"	"1"
-			"inspect_panel_dist" "40"
-			"item_quality"	"developer"
-			"propername"	"1"
-			"min_ilevel"	"0"
-			"max_ilevel"	"0"
-			"used_by_classes"
-			{
-				"scout"	"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"	"1"
-				"heavy"	"1"
-				"pyro" "1"
-				"engineer" "1"
-				"spy" "1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -7"
-			}
-			"attributes"
-			{
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"10100.0"
-				}
-				"fire rate bonus"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"	"0.25"
-				}
-				"heal on hit for slowfire"
-				{
-					"attribute_class"	"add_onhit_addhealth"
-					"value"	"250.0"
-				}
-				"critboost on kill"
-				{
-					"attribute_class"	"add_onkill_critboost_time"
-					"value"	"10.0"
-				}
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value"	"2.0"
-				}
-			}
-		}
-		"9013"
-		{
-			"name"		"Cheat Gun"
-			"item_class"	"tf_weapon_cheatgun"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"show_in_armory" "0"
-			"item_type_name"	"Kitchen Gun"
-			"item_name"	"Cheat Gun"
-			"item_description"	"yes"
-			"item_logname"	"skull"
-			"item_iconname"	"skull"
-			"item_slot"	"action"
-			"item_quality"	"normal"
-			"min_ilevel"	"1"
-			"max_ilevel"	"1"
-			"image_inventory"	"backpack/weapons/w_models/w_revolver"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_revolver/c_revolver.mdl"
-			"attach_to_hands"	"1"
-			"act_as_weapon"		"1"
-			"anim_slot" "primary"
-			"used_by_classes"
-			{
-				"scout"		"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"		"1"
-				"heavy"		"1"
-				"spy" 		"1"
-				"engineer" 	"1"
-				"pyro" 		"1"
-			}
-			"attributes"
-			{
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
-				}
-				"single wep deploy time decreased"
-				{
-					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"	"0"
-				}
-				"switch from wep deploy time decreased"
-				{
-					"attribute_class"	"mult_switch_from_wep_deploy_time"
-					"value"	"0.2"
-				}
-				"force weapon switch"
-				{
-					"attribute_class"	"force_weapon_switch"
-					"value"	"1"
-				}
-				"bullets per shot bonus"
-				{
-					"attribute_class"	"mult_bullets_per_shot"
-					"value" "1.0"
-				}
- 				"sniper fires tracer"
- 				{
-					"attribute_class"	"sniper_fires_tracer"
-					"value"	"1"
-				}
-			}
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"		"ui/item_light_gun_drop.wav"
-		}
-		"9014"
-		{
-			"name"	"Taunt: Watch and Learn"
-			"prefab"	"no_craft taunt marketable"
-			"first_sale_date"		"2014/06/17"
-			"item_name"	"Taunt: Watch and Learn"
-			"item_description"	"Off to hang myself!"
-			"image_inventory"	"backpack/player/items/all_class/taunt_flip"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"scout"	"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"	"1"
-				"heavy"	"1"
-				"spy" "1"
-				"engineer" "1"
-				"pyro" "1"
-			}
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-				"taunt attack time"
-				{
-					"attribute_class"	"taunt_attack_time"
-					"value"				"1.9"
-				}
-				"taunt attack name"
-				{
-					"attribute_class"	"taunt_attack_name"
-					"value"				"TAUNTATK_WATCHANDLEARN"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"scout"		"scenes\player\scout\low\flip_success_receiver0.vcd"
-					"sniper"	"scenes\player\sniper\low\flip_success_receiver0.vcd"
-					"soldier"	"scenes\player\soldier\low\flip_success_receiver0.vcd"
-					"demoman"	"scenes\player\demoman\low\flip_success_receiver0.vcd"
-					"medic"		"scenes\player\medic\low\flip_success_receiver0.vcd"
-					"heavy"		"scenes\player\heavy\low\flip_success_receiver0.vcd"
-					"spy"		"scenes\player\spy\low\flip_success_receiver0.vcd"
-					"engineer"	"scenes\player\engineer\low\flip_success_receiver0.vcd"
-					"pyro"		"scenes\player\pyro\low\flip_success_receiver0.vcd"
-				}
-			}
-		}
 		"9020"
 //Merc Crowbar with DEFAULT TP melee anims
 		{
@@ -12527,173 +10755,6 @@
 			}
 			"mouse_pressed_sound"	"weapons/hl1/cbar_hit1.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
-		}
-		"9022"
-		{
-			"name"	"TFC Medikit"
-			"prefab"	"valve"
-			"first_sale_date"	"2010/09/29"
-			"item_class"	"tf_weapon_tfc_medikit"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_Medikit"
-			"item_name"	"#TF_Weapon_Medikit"
-			"item_slot"	"melee"
-			"image_inventory"			"backpack/weapons/w_models/w_classic_medkit"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"inspect_panel_dist" 				"53"
-			"model_world"			"models/weapons/w_models/w_classic_medkit.mdl"
-			"model_player"			"models/weapons/v_models/v_classic_medkit_new.mdl"
-			"item_description"	"Heal Teammates with the all new portable medkit!
-			Model from Open Fortress"
-			"attach_to_hands"	"2"
-			"item_quality"	"unique"
-			"propername"	"1"
-			"min_ilevel"	"7"
-			"max_ilevel"	"7"
-			"used_by_classes"
-			{
-				"medic"	"1"
-				"civilian"	"1"
-				"mercenary"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -10"
-			}
-			"attributes"
-			{
-				
-				"fire rate penalty HIDDEN"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"	"1.50"
-				}
-				"bleeding duration"
-				{
-					"attribute_class"	"bleeding_duration"
-					"value"	"30"
-				}
-				"damage penalty"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"0.75"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value" 	"0" 
-				}
-			}
-			"mouse_pressed_sound" 	"items/smallmedkit1.wav"
-			"drop_sound" 		"ui/item_boxing_gloves_drop.wav"
-		}
-		"1184"
-		{
-			"name"	"Gloves of Running Urgently MvM"
-			"item_class"	"tf_weapon_fists"
-			"craft_class"	""		
-			"craft_material_type"	""	
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-			}
-			"show_in_armory"	"0"
-			"item_type_name"	"#TF_Weapon_Gloves"
-			"item_name"	"Gloves of Running Urgently MvM"
-			"item_slot"	"melee"
-			"item_logname"	"gloves_running_urgently"
-			"item_iconname"	"gloves_running_urgently"
-			"image_inventory"	"backpack/weapons/c_models/c_boxing_gloves_urgency/c_boxing_gloves_urgency"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_boxing_gloves/c_boxing_gloves.mdl"
-			"attach_to_hands"	"1"
-			"item_quality"	"unique"
-			"min_ilevel"	"10"
-			"max_ilevel"	"10"
-			"used_by_classes"
-			{
-				"heavy"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -10"
-			}
-			"attributes"
-			{
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value"	"1.3"
-				}
-				"damage penalty"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"0.75"
-				}
-				"provide on active"
-				{
-					"attribute_class"	"provide_on_active"
-					"value" "1"
-				}
-				"lunchbox adds minicrits"
-				{
-					"attribute_class"	"set_weapon_mode"
-					"value" "2"
-				}
-				"self mark for death"
-				{
-					"attribute_class"	"self_mark_for_death"
-					"value"	"3"
-				}
-				"single wep holster time increased"
-				{
-					"attribute_class"	"mult_switch_from_wep_deploy_time"
-					"value"				"1.5"
-				}
-			}
-			"hide_bodygroups_deployed_only"	"1"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hands"			"1"
-				}
-				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
-				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
-				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
-				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
-			}
-			"visuals_red"
-			{
-				"use_visualsblock_as_base"	"visuals"
-				"skin"	"2"
-			}
-			"visuals_blu"
-			{
-				"use_visualsblock_as_base"	"visuals"
-				"skin"	"3"
-			}
-			"mouse_pressed_sound" "ui/item_boxing_gloves_pickup.wav"
-			"drop_sound" "ui/item_boxing_gloves_drop.wav"
-			"xifier_class_remap"	"gru"
 		}
 		"9412"
 		{
@@ -14532,52 +12593,8 @@
             "attach_to_hands"    "2"
             "used_by_classes"
             {
-                "engineer"    "1"
-				"mercenary"	  "1"
-				"demoman"	"1"
-            }
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_1911.Single"
-				"sound_burst"			"Weapon_1911.SingleCrit"
-			}
-        }
-		"9868"
-        {
-            "name"    "TF_WEAPON_1911_SOLDIER"
-            "first_sale_date"    "2010/09/29"
-			"item_class" "tf_weapon_pistol"
-            "baseitem"    "0"
-			"item_name"		"#FC_Weapon_1911"
-			"anim_slot" "secondary2"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-				"can_deal_mvm_penetration_damage"	"1"
-				"can_deal_long_distance_damage"	"1"
-			}
-			"base_item_name"	"TF_WEAPON_PISTOL"
-			"show_in_armory"	"0"
-			"item_type_name"	"#TF_Weapon_Pistol"
-			"item_description"	"#FC_Weapon_1911_Desc"
-			"item_name"	"#FC_Weapon_1911"
-			"item_slot"	"secondary"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"1"
-			"attach_to_hands"	"1"
-			"inspect_panel_dist" "31"
-			"image_inventory"	"backpack/weapons/c_models/1911/c_pistol"
-            "model_world"    "models/weapons/c_1911/c_pistol_soldier.mdl"
-            "model_player"    "models/weapons/c_1911/v_pistol_engineer.mdl"
-            "attach_to_hands"    "2"
-            "used_by_classes"
-            {
+                "scout"    "1"
+				"sniper"	  "1"
 				"soldier"	"1"
             }
 			"visuals"
@@ -14585,62 +12602,7 @@
 				"sound_single_shot"		"Weapon_1911.Single"
 				"sound_burst"			"Weapon_1911.SingleCrit"
 			}
-						"attributes"
-			{
-				"maxammo secondary increased"
-				{
-					"attribute_class"	"mult_maxammo_secondary"
-					"value"	"1.50"
-				}
-				"Reload time decreased"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value"	"0.90"
-				}
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"1.25"
-				}
-				"clip size penalty"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"	"0.85"
-				}
-				"fire rate penalty"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"	"1.8"
-				}
-            }
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"		"ui/item_light_gun_drop.wav"
-			"particle_suffix"		"pistol"
-
         }
-		"9869"
-        {
-            "name"    "TF_WEAPON_1911_MEDIC"
-            "first_sale_date"    "2010/09/29"
-            "prefab"    "weapon_1911_primary"
-			"item_slot" 	"primary"
-			"show_in_armory"	"0"
-            "baseitem"    "0"
-			"item_name"		"#FC_Weapon_1911"
-			"image_inventory"	"backpack/weapons/c_models/1911/c_pistol"
-            "model_world"    "models/weapons/c_1911/c_pistol.mdl"
-            "model_player"    "models/weapons/c_1911/v_pistol_engineer.mdl"
-            "attach_to_hands"    "2"
-            "used_by_classes"
-            {
-				"medic"	"1"
-            }
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_1911.Single"
-				"sound_burst"			"Weapon_1911.SingleCrit"
-			}
-		}
 		"9870"
 		{
 			"name"	"The Team Captain"
@@ -15528,6 +13490,94 @@
 					"agent"		"scenes/workshop/player/scout/low/taunt_the_scaredycat.vcd"
 				}
 			}
+		}
+		"1132"
+		{
+			"name"	"TF_WEAPON_SPELLBOOK"
+			"prefab"	"halloween2013_spellbook"
+			"item_type_name"	"#TF_Spellbook_Type"
+			"item_name"			"#TF_Spellbook_Basic"
+			"item_description"	"#TF_SpellBook_Basic_Desc"
+			"item_quality"		"normal"
+			"baseitem"			"0"
+			"show_in_armory"	"1"
+			"min_ilevel"		"1"
+			"max_ilevel"		"1"
+			"image_inventory"	"backpack/props_halloween/hwn_spellbook_magazine"
+		}
+		"1152"
+		{
+			"name"		"TF_WEAPON_GRAPPLINGHOOK"
+			"item_class"	"tf_weapon_grapplinghook"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory" "1"
+			"item_type_name"	"#TF_Weapon_GrapplingHook"
+			"item_name"	"#TF_Weapon_GrapplingHook"
+			"item_description"	"#TF_Weapon_GrapplingHook_desc"
+			"item_logname"	"grappling_hook"
+			"item_iconname"	"grappling_hook"
+			"item_slot"	"action"
+			"item_quality"	"normal"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_grappling_hook/c_grappling_hook"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_grappling_hook/c_grappling_hook.mdl"
+			"attach_to_hands"	"1"
+			"act_as_weapon"		"1"
+			"anim_slot" "MELEE_ALLCLASS"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"		"1"
+				"heavy"		"1"
+				"spy" 		"1"
+				"engineer" 	"1"
+				"pyro" 		"1"
+				"mercenary" "1"
+				"civilian" "1"
+				"zombiefast" "1"
+			}
+			"attributes"
+			{
+				"reload time increased hidden"
+				{
+					"attribute_class"	"mult_reload_time_hidden"
+					"value"	"0"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"26" 
+				}
+				"single wep deploy time decreased"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"	"0"
+				}
+				"switch from wep deploy time decreased"
+				{
+					"attribute_class"	"mult_switch_from_wep_deploy_time"
+					"value"	"0.2"
+				}
+				"force weapon switch"
+				{
+					"attribute_class"	"force_weapon_switch"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+			"xifier_class_remap"	"grappling_hook"
 		}
 		"31381"
 		{
