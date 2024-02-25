@@ -2987,7 +2987,7 @@
 			"inspect_panel_dist" "55"
 			"used_by_classes"
 			{
-				"demoman"	"1"
+				"sniper"	"1"
 			}
 			"static_attrs"
 			{
@@ -4303,16 +4303,6 @@
 			}
 			"attributes"
 			{
-				"maxammo secondary increased"
-				{
-					"attribute_class"	"mult_maxammo_secondary"
-					"value"	"1.50"
-				}
-				"Reload time decreased"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value"	"0.90"
-				}
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
@@ -6395,11 +6385,6 @@
 			}
 			"attributes"
 			{
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value" "1.15"
-				}
 				"increased jump height from weapon"
 				{
 					"attribute_class"	"mod_jump_height_from_weapon"
@@ -9353,7 +9338,7 @@
 			"inspect_panel_dist" "38"
 			"used_by_classes"
 			{
-				"mercenary"	"1"
+				"soldier"	"1"
 			}
 			"static_attrs"
 			{
@@ -12593,7 +12578,6 @@
             "attach_to_hands"    "2"
             "used_by_classes"
             {
-                "scout"    "1"
 				"sniper"	  "1"
 				"soldier"	"1"
             }

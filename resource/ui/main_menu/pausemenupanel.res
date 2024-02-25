@@ -18,13 +18,13 @@
     {
         "ControlName"    "ImagePanel"
         "fieldName"        "TitleBanner"
-        "xpos"            "0"
-        "ypos"            "0"
-        "wide"            "o8"
-        "tall"            "86"
+		"xpos"			"45"
+		"ypos"			"10"
+		"wide"			"290"
+		"tall"			"105"
         "visible"        "1"
         "enabled"        "1"
-        "image"            "menu_header"
+        "image"            "../logo/open2_logo"
         "scaleImage"    "1"
     }
 	
