@@ -305,7 +305,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
-		"image"		"logos/UI/spray"
+		"image"		"../logo/open2_logo"
 		"border"		"DepressedBorder"
 		"scaleImage"		"1"
 		"scaleAmount"		"0.000000"
